@@ -56148,7 +56148,7 @@ var mapStateToProps = function mapStateToProps(state) {
 
 /***/ }),
 
-/***/ 2:
+/***/ 1:
 /*!******************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=E%3A%5CDion-Project%5Cprojek%5Cweather-app%5Cpages%5Cindex.js ***!
   \******************************************************************************************************************************/
@@ -56171,5 +56171,5 @@ module.exports = dll_92862a29917dee4fb2b1;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]));;
+},[[1,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=index.js.map
