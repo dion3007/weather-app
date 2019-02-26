@@ -1501,7 +1501,7 @@ function (_Component) {
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_7__["default"])(_this)), "handleChange", function (event) {
       _this.setState(Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__["default"])({}, event.target.name, event.target.value));
 
-      _this.getWeather();
+      _this.getWeather(event.target.value);
     });
 
     _this.state = {
@@ -1528,7 +1528,7 @@ function (_Component) {
           while (1) {
             switch (_context.prev = _context.next) {
               case 0:
-                this.getWeather();
+                this.getWeather(this.state.city);
 
               case 1:
               case "end":
@@ -1549,7 +1549,7 @@ function (_Component) {
     value: function () {
       var _getWeather = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__["default"])(
       /*#__PURE__*/
-      _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee2() {
+      _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee2(val) {
         var listWeathers;
         return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee2$(_context2) {
           while (1) {
@@ -1557,7 +1557,7 @@ function (_Component) {
               case 0:
                 _context2.prev = 0;
                 _context2.next = 3;
-                return Object(_app_api_app_api__WEBPACK_IMPORTED_MODULE_14__["listWeatherAPI"])(this.state.city);
+                return Object(_app_api_app_api__WEBPACK_IMPORTED_MODULE_14__["listWeatherAPI"])(val);
 
               case 3:
                 listWeathers = _context2.sent;
@@ -1601,7 +1601,7 @@ function (_Component) {
         }, _callee2, this, [[0, 9]]);
       }));
 
-      function getWeather() {
+      function getWeather(_x) {
         return _getWeather.apply(this, arguments);
       }
 
@@ -1643,7 +1643,7 @@ function (_Component) {
       }, "City"), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_12__["Select"], {
         value: this.state.city,
         onChange: function onChange(e) {
-          return _this2.handleChange(e);
+          _this2.handleChange(e);
         },
         inputProps: {
           name: 'city',

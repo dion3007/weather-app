@@ -32,12 +32,12 @@ class App extends Component {
   }
 
   async componentDidMount() {
-    this.getWeather()
+    this.getWeather(this.state.city)
   }
 
-  async getWeather() {
+  async getWeather(val) {
     try {
-      const listWeathers = await listWeatherAPI(this.state.city)
+      const listWeathers = await listWeatherAPI(val)
       if (listWeathers.status !== 200) throw Error()
       this.setState({
         weatherResponse: listWeathers.data,
@@ -55,7 +55,7 @@ class App extends Component {
 
   handleChange = event => {
     this.setState({ [event.target.name]: event.target.value });
-    this.getWeather()
+    this.getWeather(event.target.value)
   };
 
   render() {
@@ -67,7 +67,7 @@ class App extends Component {
           <InputLabel htmlFor="city">City</InputLabel>
           <Select
             value={this.state.city}
-            onChange={(e) => this.handleChange(e)}
+            onChange={(e) => {this.handleChange(e);}}
             inputProps={{
               name: 'city',
               id: 'city',
