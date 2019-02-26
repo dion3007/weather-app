@@ -56028,6 +56028,7 @@ function (_Component) {
     key: "handleChange",
     value: function handleChange(event) {
       this.setState(Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])({}, event.target.name, event.target.value));
+      this.getWeather();
     }
   }, {
     key: "render",
@@ -56046,20 +56047,20 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_11__["Paper"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 64
+          lineNumber: 65
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_11__["FormControl"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 65
+          lineNumber: 66
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_11__["InputLabel"], {
         htmlFor: "city",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 66
+          lineNumber: 67
         },
         __self: this
       }, "City"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_11__["Select"], {
@@ -56073,48 +56074,48 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 67
+          lineNumber: 68
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_11__["MenuItem"], {
         value: "",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75
+          lineNumber: 76
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("em", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 76
+          lineNumber: 77
         },
         __self: this
       }, "None")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_11__["MenuItem"], {
         value: "Jakarta",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 78
+          lineNumber: 79
         },
         __self: this
       }, "Jakarta"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_11__["MenuItem"], {
         value: "Bekasi",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 79
+          lineNumber: 80
         },
         __self: this
       }, "Bekasi"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_11__["MenuItem"], {
         value: "Aceh",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 80
+          lineNumber: 81
         },
         __self: this
       }, "Aceh"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_11__["MenuItem"], {
         value: "Surabaya",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 81
+          lineNumber: 82
         },
         __self: this
       }, "Surabaya"))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_components_card_index_js__WEBPACK_IMPORTED_MODULE_12__["default"], {
@@ -56126,7 +56127,7 @@ function (_Component) {
         title: title,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 84
+          lineNumber: 85
         },
         __self: this
       }));
