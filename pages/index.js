@@ -53,7 +53,7 @@ class App extends Component {
     this.setState({ initialLoading: false })
   }
 
-  handleChange = event => {
+  handleChange(event) {
     this.setState({ [event.target.name]: event.target.value });
   };
 
@@ -61,12 +61,12 @@ class App extends Component {
     const { city, icon, suhu, wind, date, title, weatherResponse } = this.state
     console.log(weatherResponse)
     return (
-      <paper>
+      <Paper>
         <FormControl>
           <InputLabel htmlFor="city">City</InputLabel>
           <Select
             value={this.state.city}
-            onChange={this.handleChange}
+            onChange={(e) => this.handleChange(e)}
             inputProps={{
               name: 'city',
               id: 'city',
@@ -89,7 +89,7 @@ class App extends Component {
           date={date}
           title={title}
         />
-      </paper>
+      </Paper>
     )
   }
 }
